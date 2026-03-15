@@ -1,0 +1,91 @@
+.titlescreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+}
+
+.titlemenu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 100px;
+}
+
+body {
+  background-image: url("/河野友真の冒険Ⅱ本編/assets/img/titlescreen-background-img1.png");
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.titlemenu button {
+  font-size: 15px;
+  color: white;
+  background-image: url("/河野友真の冒険Ⅱ本編/assets/img/button3.png");
+  border: none;
+  background-size: cover;
+  background-color: transparent;
+  width: 200px;
+  height: 80px;
+}
+
+.titlemenu button:active {
+  background-image: url("/河野友真の冒険Ⅱ本編/assets/img/button2.png");
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #333;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.modal-content h2{
+  background-color: lightgray;
+  color: black;
+  border-radius: 2px;
+}
+.menu-content {
+  background-color: white;
+  border-radius: 5px;
+}
+
+@keyframes titleanim {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.logo {
+  animation: titleanim 5s ease-in-out infinite;
+}
+
+.titlemenu button:nth-child(1) {
+  animation: titleanim 3s ease-in-out infinite;
+}
+
+.titlemenu button:nth-child(2) {
+  animation: titleanim 3.5s ease-in-out infinite 0.3s;
+}
+
+.titlemenu button:nth-child(3) {
+  animation: titleanim 2.8s ease-in-out infinite 0.6s;
+}
+
+.titlemenu button:nth-child(4) {
+  animation: titleanim 3.2s ease-in-out infinite 0.9s;
+}

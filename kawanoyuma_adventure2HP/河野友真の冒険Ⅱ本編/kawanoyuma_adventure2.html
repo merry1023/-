@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>河野友真の冒険Ⅱタイトル</title>
+  <link rel="stylesheet" href="kawanoyuma_adventure2.css">
+  <link href="https://fonts.googleapis.com/css2?family=ctx.font = "32px 'JF-Dot-K12'";+Gothic+16&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+  <div class="titlescreen">
+    <img src="/河野友真の冒険Ⅱ本編/assets/img/title_logo.png" alt="タイトルロゴ" class="logo" width="100%">
+    
+    <div class="titlemenu">
+      <button id="btn-startgame">はじめから</button>
+      <button id="btn-continuegame">つづきから</button>
+      <button id="btn-information">おしらせ</button>
+      <button id="btn-setting">設定</button>
+    </div>
+    
+    <div id="modal-information" class="modal">
+      <div class="modal-content">
+        <h2>おしらせ</h2>
+        <p class="menu-content">
+          JavaScriptでどこまでRPG作れるのか挑戦してます。<br>
+          今後ともよろりんこ。
+        </p>
+        <button id="btn-close-information">閉じる</button>
+      </div>
+    </div>
+    <div id="modal-setting" class="modal">
+      <div class="modal-content">
+        <h2>設定</h2>
+        <div class="menu-content">
+          <p>BGM音量</p>
+          <input type="range" id="bgm-volume" min="0" max="100" value="50">
+          <p>効果音音量</p>
+          <input type="range" id="se-volume" min="0" max="100" value="50">
+          <p>テキスト速度</p>
+          <input type="range" id="text-speed" min="1" max="5" value="3">
+        </div>
+        
+        <button id="btn-close-setting">閉じる</button>
+      </div>
+    </div>
+    
+  </div>
+  
+  
+  <script src="kawanoyuma_adventure2.js"></script>
+</body>
+
+</html>

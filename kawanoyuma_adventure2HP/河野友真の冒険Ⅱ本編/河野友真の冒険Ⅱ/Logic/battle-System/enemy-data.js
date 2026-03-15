@@ -1,0 +1,40 @@
+const ENEMIES = {
+  slime: {
+    name: "スライム",
+    level: 1,
+    maxHp: 4,
+    hp: 4,
+    attack: 1,
+    defense: 1,
+    magicDefense: 2,
+    speed: 5,
+    element: null,
+    weakness: "fire",
+    statusResistance: [],
+    skills: ["tackle"],
+    actionPattern: "random",
+    passives: [],
+    counter: false,
+    exp: 10,
+    gold: 5,
+    dropItems: [],
+    image: "/河野友真の冒険Ⅱ本編/assets/img/enemy/slime.png",
+    size: 1,
+    bossBGM: null,
+    statusEffects: []
+  },
+  orita: {
+  name: "折田涼真",
+  level: 10,
+  hp: 10, maxHp:10,
+  attack: 0, defense: 10000,
+  magicAttack: 0, magicDefense: 0,
+  speed: 300,
+  exp: 10000,
+  pocky: 30,
+  skills: ["tackle"],
+  element: null,
+  image: "/河野友真の冒険Ⅱ本編/assets/img/enemy/orita.png",
+  statusEffects: []
+}
+};

@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  background-color: black;
+}
+
+#gameCanvas {
+  flex: 1;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  height: 150px;
+}
+
+.dpad {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.controls button {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  border-radius: 10%;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+#btn-up {
+  margin-left: 65px;
+}
+
+.row {
+  display: flex;
+  gap: 5px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+#player-info {
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+}
+
+* {
+  -webkit-user-select: none;
+  user-select: none;
+}
